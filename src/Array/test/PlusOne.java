@@ -1,4 +1,4 @@
-package Array;
+package Array.test;
 
 public class PlusOne {
 
@@ -18,9 +18,6 @@ public class PlusOne {
         if (plus == 1) {
             digits = new int[digits.length+1];
             digits[0] = 1;
-            for (int i=1; i<digits.length; i++) {
-                digits[i] = 0;
-            }
         }
         return digits;
     }
