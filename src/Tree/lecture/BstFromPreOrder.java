@@ -1,4 +1,4 @@
-package Leetcode;
+package Tree.lecture;
 
 import java.util.Arrays;
 

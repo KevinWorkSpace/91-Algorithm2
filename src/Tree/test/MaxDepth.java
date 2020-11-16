@@ -1,4 +1,4 @@
-package Leetcode;
+package Tree.test;
 
 public class MaxDepth {
 
