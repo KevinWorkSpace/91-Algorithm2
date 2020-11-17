@@ -1,4 +1,4 @@
-package Leetcode;
+package LinkedList.test;
 
 public class FindMiddleNode {
 
@@ -35,15 +35,6 @@ public class FindMiddleNode {
         FindMiddleNode findMiddleNode = new FindMiddleNode();
         findMiddleNode.sortedListToBST(n1);
     }
-}
-
-
-class ListNode {
-    int val;
-    ListNode next;
-    ListNode() {}
-    ListNode(int val) { this.val = val; }
-    ListNode(int val, ListNode next) { this.val = val; this.next = next; }
 }
 
 

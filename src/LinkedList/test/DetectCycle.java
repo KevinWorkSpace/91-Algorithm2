@@ -1,4 +1,4 @@
-package Leetcode;
+package LinkedList.test;
 
 public class DetectCycle {
 
