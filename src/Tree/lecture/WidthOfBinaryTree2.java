@@ -7,7 +7,7 @@ import java.util.Queue;
 
 public class WidthOfBinaryTree2 {
 
-    HashMap<Integer, Integer> map = new HashMap<>();
+    HashMap<Integer, Integer> map =new HashMap<>();
     int ans = 0;
 
     public int widthOfBinaryTree(TreeNode root) {
