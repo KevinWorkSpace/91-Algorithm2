@@ -1,6 +1,6 @@
 package Advanced.Design;
 
-public class MyCircularDeque {
+public class MyCircularDeque2 {
 
     int[] res;
     int capacity;
@@ -8,7 +8,7 @@ public class MyCircularDeque {
     int tail = 0;
 
     /** Initialize your data structure here. Set the size of the deque to be k. */
-    public MyCircularDeque(int k) {
+    public MyCircularDeque2(int k) {
         capacity = k + 1;
         res = new int[capacity];
     }
