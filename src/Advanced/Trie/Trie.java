@@ -54,6 +54,7 @@ class TrieNode {
     char val;
     TrieNode[] children = new TrieNode[26];
     boolean isEndingChar;
+    int v;
 
     public TrieNode(char val) {
         this.val = val;
