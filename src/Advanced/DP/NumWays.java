@@ -4,7 +4,7 @@ public class NumWays {
 
     public int numWays(int n) {
         if (n == 0) return 1;
-        if (n <= 2return n;
+        if (n <= 2) return n;
         int s1 = 1;
         int s2 = 2;
         int sum = 0;
