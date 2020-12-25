@@ -15,7 +15,7 @@ public class FindKthLargest {
                     pq.poll();
                     pq.add(nums[i]);
                 }
-            } 
+            }
         }
         return pq.peek();
     }
