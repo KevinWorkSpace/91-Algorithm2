@@ -14,14 +14,27 @@ public class CoinChange {
             }
         }
         for (int i=1; i<=amount; i++) {
-            for (int j=0; j<coins.length; j++) {
-                if (i - coins[j] > 0 && dp[i-coins[j]] != -1) {
-                    if (dp[i] == -1 || dp[i] > dp[i - coins[j]] + 1) {
-                        dp[i] = dp[i - coins[j]] + 1;
+            if (dp[i] == -1) {
+                int minTemp = Integer.MAX_VALUE;
+                for (int j=0; j<coins.length; j++) {
+                    if (i - coins[j] > 0 && dp[i - coins[j]] != -1) {
+                        if (minTemp > dp[i - coins[j]] + 1) {
+                            minTemp = dp[i - coins[j]] + 1;
+                        }
                     }
+                }
+                if (minTemp != Integer.MAX_VALUE) {
+                    dp[i] = minTemp;
                 }
             }
         }
         return dp[amount];
+    }
+
+    public static void main(String[] args) {
+        int[] coins = {2};
+        int amount = 3;
+        CoinChange coinChange = new CoinChange();
+        int res = coinChange.coinChange(coins, amount);
     }
 }
